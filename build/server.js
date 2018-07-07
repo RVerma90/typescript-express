@@ -19,5 +19,5 @@ app.use('/signup', controllers_1.SignUpController);
 app.listen(port, function () {
     // Success callback
     console.log("Listening at http://localhost:" + port + "/");
-    console.log(process.env.DB);
+    console.log(process.env.PORT);
 });

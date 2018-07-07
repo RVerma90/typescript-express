@@ -11,7 +11,7 @@ import {SignUpController } from './controllers';
 // Create a new express application instance
 const app: express.Application = express();
 // The port the express app will listen on
-const port: number = 3000;
+const port: number =  3000;
 
 // Mount the SignUpController at the /signp route
 app.use('/signup', SignUpController);
@@ -20,5 +20,5 @@ app.use('/signup', SignUpController);
 app.listen(port, () => {
     // Success callback
     console.log(`Listening at http://localhost:${port}/`);
-    console.log(process.env.DB);
+    console.log(process.env.PORT);
 });
