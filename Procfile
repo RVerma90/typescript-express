@@ -1,2 +1,1 @@
-web: heroku ps:scale web=1
-web: node build/server.js
+web: ./node_modules/.bin/tsc --module commonjs --outDir build/ --noImplicitAny --sourceMap --target ES5 lib/index.ts && node build/index.js
