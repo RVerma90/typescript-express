@@ -19,7 +19,7 @@ router.get('/:name', (req: Request, res: Response) => {
     let { name } = req.params;
 
     // Greet the given name
-    res.send(`Welcome to Goli, ${name}`);
+    res.send(`Welcome, ${name}`);
 });
 
 // Export the express.Router() instance to be used by server.ts

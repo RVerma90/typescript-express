@@ -16,7 +16,7 @@ router.get('/:name', function (req, res) {
     // Extract the name from the request parameters
     var name = req.params.name;
     // Greet the given name
-    res.send("Welcome to Goli, " + name);
+    res.send("Welcome, " + name);
 });
 // Export the express.Router() instance to be used by server.ts
 exports.WelcomeController = router;
