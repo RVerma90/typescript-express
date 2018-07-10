@@ -21,4 +21,5 @@ app.listen(port, () => {
     // Success callback
     
     console.log(`Listening at http://localhost:${port}/`);
+    console.log(`Listening at http://localhost:${port}/`);
 });
